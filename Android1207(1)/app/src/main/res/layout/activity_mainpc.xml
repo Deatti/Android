@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/mainimg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/mainimg"
+        android:layout_centerHorizontal="true"
+        android:text="피방자리"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:text="광고 문의 주세요"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        />
+    <TableLayout
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maintext"
+        android:layout_margin="50dp"
+        android:layout_above="@id/ok"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/n1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="위치보기"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/n2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="찾아보기"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/n3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="단골자리"
+                android:onClick="onClick3"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>
+
+
+
